@@ -1,0 +1,315 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+/* -------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    min-width: 20rem;
+    line-height: 1;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+button{
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+/* -------------------------------------------------------- */
+.container{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header__top{
+    margin-bottom: 91px;
+}
+.header__search {
+    height: 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__btn-cart-user{
+    display: flex;
+    gap: 0 1rem;
+}
+.header__border-line{
+    max-width: 86.625rem;
+    height: .0625rem;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.menu__list{
+    height: 3.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2.75rem;
+    flex-wrap: wrap;
+}
+.menu__link{
+    color: #726E8D;
+    font-family: Satoshi;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.menu__link--hover:hover{
+    text-decoration: underline;
+}
+.section-content__block{
+    max-width: 1280px;
+    max-height: 584px;
+}
+.section-content__content{
+    display: flex;
+}
+.section-content__content-left{
+    display: flex;
+    flex-direction: column;
+    width: 47.5rem;
+    max-width:  47.5rem;
+    max-height: 36.5rem;
+    height: 36.5rem;
+    background-color: #2A254B;
+}
+.section-content__content-title{
+    max-width: 513px;
+    margin-top: 10.273973%; /* 60/584 */
+    margin-left: 7.894737%; /* 60/760 */
+    margin-right: 24.605263%; /* 187/760 */
+    padding-bottom: 2.5625rem;
+    color: #fff;
+    font-family: Clash Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.section-content__content-btn{
+    align-self: flex-start;
+    margin-left: 7.894737%; /* 60/760 */
+    padding: 16px 32px;
+    background: rgba(249, 249, 249, 0.15);
+    color: #fff;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    order: 1;
+}
+.section-content__content-subtitle{
+    margin: auto 98px 60px 60px;
+    color: #fff;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    order: 2;
+}
+.section-content__content-img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.section-brand__brand-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    column-gap: 4.3125rem;
+    row-gap: 2.25rem;
+}
+.section-brand__brand-title{
+    margin: 7.5rem 0 3.1875rem 0;
+    text-align: center;
+    color: #2A254B;
+    font-family: Clash Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.title-brand{
+    color: #2A254B;
+    font-family: Clash Display;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 8px;
+}
+.subtitle-brand{
+    color: #2A254B;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.section-brand__delivery-img{
+    margin-bottom: 16px;
+}
+.section-brand__quality-img{
+    margin-bottom: 16px;
+}
+.section-brand__profitable-img{
+    margin-bottom: 16px;
+}
+.section-brand__package-img{
+    margin-bottom: 16px;
+}
+.section-ceramics__ceramics-title{
+    margin: 166px 0 33px 0;
+    color: #2A254B;
+    font-family: Clash Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-ceramics__ceramics-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+    place-items: center;
+
+}
+@media (max-width: 848px){
+    .section-ceramics__ceramics-card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (max-width: 370px){
+    .section-ceramics__ceramics-card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+}
+.section-ceramics__ceramics-chair{
+    max-width: 305px;
+}
+.chair-img{
+    position: relative;
+}
+.chair-title{
+    text-align: left;
+    margin: 24px 0 8px 0;
+}
+.chair-price{
+    text-align: left;
+}
+.section-ceramics__ceramics-rustik{
+    max-width: 305px; 
+}
+.rustik-title{
+    text-align: left;
+    margin: 24px 0 8px 0;
+}
+.rustik-price{
+    text-align: left;
+}
+.section-ceramics__ceramics-silky{
+    max-width: 305px;   
+}
+.silky-title{
+    text-align: left;
+    margin: 24px 0 8px 0;
+}
+.silky-price{
+    text-align: left;
+}
+.section-ceramics__ceramics-lamp{
+    max-width: 305px;
+}
+.lamp-title{
+    text-align: left;
+    margin: 24px 0 8px 0;
+}
+.lamp-price{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 60.625em){
+    .section-content__content-subtitle{
+        margin: 110px 50px 60px 50px;
+    }
+}
+@media (max-width: 51.1875em){
+    .section-content__content-img{
+        display: none;
+    }
+    .section-content__content-left{
+        min-width: 100%;
+        min-height: 502px;
+        height: 85%;
+        max-height: 584px;
+    }
+    .section-content__content-title{
+        margin: 2.5rem 1.5rem 0 1.5rem;
+        text-align: left;
+        max-width: none;
+        padding-bottom: 80px;
+    }
+    .section-content__content-subtitle{
+        order: 1;
+        margin: 0 24px 32px 24px;
+        font-size: 14px;
+    }
+    .section-content__content-btn{
+        margin-top: auto;
+        margin-bottom: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+        order: 2;
+        align-self: stretch;
+    }
+}
+@media (max-width: 23.75em){
+    .section-content__content-title{
+        font-size: 1.625rem;
+    }
+}
+@media (max-width: 38.625em){
+    .section-brand__brand-title{
+        text-align: left;
+    }
+}
